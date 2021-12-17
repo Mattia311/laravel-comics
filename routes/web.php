@@ -21,3 +21,10 @@ Route::get('/', function () {
 
     return view('welcome', compact('comics'));
 });
+
+
+Route::get('/description', function () {
+    $comics = config('db');
+
+    return view('description', compact('comics'));
+})-> name('description');

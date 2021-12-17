@@ -11247,6 +11247,12 @@ header {
   background: black;
   color: white;
   margin-bottom: -8px;
+  height: 100px;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  padding-top: 20px;
 }
 
 main {
