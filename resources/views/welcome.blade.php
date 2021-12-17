@@ -5,8 +5,18 @@
 
 @section('content')
 
+<div class="container">
+    <div class="row">
 
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, iusto. Commodi neque in similique ratione officia earum vel itaque delectus asperiores cumque iusto molestias debitis tenetur necessitatibus ab libero, facere distinctio! Voluptatem omnis incidunt veniam nemo, laboriosam quae similique, rem debitis sint officia adipisci eligendi expedita laborum assumenda eius atque!</p>
-
+        @foreach($comics as $comic)
+        <div class="card mt-3">
+            <ul>
+                <li>{{$comic['title']}}</li>
+                <p>{{$comic['description']}}</p>
+            </ul>
+        </div>
+        @endforeach
+    </div>
+</div>
 
 @endsection

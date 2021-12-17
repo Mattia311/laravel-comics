@@ -11243,3 +11243,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+header {
+  background: black;
+  color: white;
+  margin-bottom: -8px;
+}
+
+main {
+  background: cadetblue;
+}
