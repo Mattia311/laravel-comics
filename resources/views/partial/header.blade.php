@@ -2,7 +2,7 @@
     <div class="top-header">
         <div class="text-top d-flex">
             <p>DC POWER VISA</p>
-            <p> ADDITIONAL DC SITES</p>
+            <p> ADDITIONAL DC SITES <i class="fas fa-caret-down"></i></p>
         </div>
         <nav class="nav_menu">
             <div class="container">

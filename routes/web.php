@@ -28,3 +28,17 @@ Route::get('/description', function () {
 
     return view('description', compact('comics'));
 })-> name('description');
+
+
+
+
+Route::get('comics/{id}', function ($id) {
+    $comics = config('comics');
+
+    if (is_numeric($id) && $id >= 0 && $id < count($comics)) {
+        $comic = $comics[$id];
+        return view('comic', compact('comic'));
+    } else {
+        abort(404);
+    }
+})->name('comic');

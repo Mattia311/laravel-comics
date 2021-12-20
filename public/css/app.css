@@ -11251,17 +11251,18 @@ textarea.form-control-lg {
 }
 #site_header .top-header {
   background: #0282F9;
-  height: 22px;
+  height: 19px;
 }
 #site_header .top-header .text-top {
-  margin-left: 1000px;
+  margin-left: 1101px;
 }
 #site_header .top-header .text-top p {
   margin-right: 30px;
+  font-size: 12px;
 }
 #site_header .nav_menu {
   margin-bottom: 5px;
-  margin-top: -24px;
+  margin-top: -18px;
 }
 #site_header .nav_menu .container {
   display: flex;
@@ -11327,6 +11328,82 @@ textarea.form-control-lg {
 }
 #site_header .nav_menu .search i {
   color: black;
+}
+
+#site_footer .link_footer {
+  background: url(../img/dc-logo-bg.png) 80% no-repeat, url(../img/footer-bg.jpg) no-repeat;
+  background-size: 610px, cover;
+  height: 470px;
+  display: flex;
+}
+#site_footer .link_footer .container .list_links {
+  display: flex;
+}
+#site_footer .link_footer .container .list_links .list {
+  margin-right: 30px;
+}
+#site_footer .link_footer .container .list_links .list ul {
+  list-style: none;
+  padding: 0;
+}
+#site_footer .link_footer .container .list_links .list h3 {
+  color: white;
+  text-transform: uppercase;
+  margin: 30px 0 15px;
+}
+#site_footer .link_footer .container .list_links .list a {
+  color: #8f8f90;
+  text-decoration: none;
+}
+#site_footer .link_footer .container p {
+  color: #8f8f90;
+}
+#site_footer .link_footer .container p a {
+  color: #0282F9;
+  text-decoration: none;
+}
+#site_footer .link_footer .container p a:hover {
+  text-decoration: underline;
+}
+#site_footer .link_footer .logo_dc {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#site_footer .contact {
+  background-color: #303030;
+  height: 100px;
+}
+#site_footer .contact .container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+#site_footer .contact .container .button button {
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 12px;
+  color: white;
+  background-color: #303030;
+  border: 2px solid #0282F9;
+  cursor: pointer;
+}
+#site_footer .contact .container .socials {
+  display: flex;
+  align-items: center;
+}
+#site_footer .contact .container .socials .social {
+  margin-left: 20px;
+}
+#site_footer .contact .container .socials .social img {
+  cursor: pointer;
+}
+#site_footer .contact .container .socials h3 {
+  color: #0282F9;
+  text-transform: uppercase;
+  margin-right: 10px;
+  font-size: 20px;
+  margin-top: 13px;
 }
 
 .hero_image {
@@ -11412,78 +11489,4 @@ textarea.form-control-lg {
   font-weight: 400;
   font-size: 15px;
   margin-left: 10px;
-}
-
-#site_footer .link_footer {
-  background: url(../img/dc-logo-bg.png) 80% no-repeat, url(../img/footer-bg.jpg) no-repeat;
-  background-size: 610px, cover;
-  height: 470px;
-  display: flex;
-}
-#site_footer .link_footer .container .list_links {
-  display: flex;
-}
-#site_footer .link_footer .container .list_links .list {
-  margin-right: 30px;
-}
-#site_footer .link_footer .container .list_links .list ul {
-  list-style: none;
-  padding: 0;
-}
-#site_footer .link_footer .container .list_links .list h3 {
-  color: white;
-  text-transform: uppercase;
-  margin: 30px 0 15px;
-}
-#site_footer .link_footer .container .list_links .list a {
-  color: #8f8f90;
-  text-decoration: none;
-}
-#site_footer .link_footer .container p {
-  color: #8f8f90;
-}
-#site_footer .link_footer .container p a {
-  color: #0282F9;
-  text-decoration: none;
-}
-#site_footer .link_footer .container p a:hover {
-  text-decoration: underline;
-}
-#site_footer .link_footer .logo_dc {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#site_footer .contact {
-  background-color: #303030;
-  height: 100px;
-}
-#site_footer .contact .container {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
-}
-#site_footer .contact .container .button button {
-  text-transform: uppercase;
-  font-size: 1rem;
-  padding: 12px;
-  color: white;
-  background-color: #303030;
-  border: 2px solid #0282F9;
-  cursor: pointer;
-}
-#site_footer .contact .container .socials {
-  display: flex;
-  align-items: center;
-}
-#site_footer .contact .container .socials .social {
-  margin-left: 20px;
-}
-#site_footer .contact .container .socials .social img {
-  cursor: pointer;
-}
-#site_footer .contact .container .socials h3 {
-  color: #0282F9;
-  text-transform: uppercase;
-  margin-right: 10px;
 }
