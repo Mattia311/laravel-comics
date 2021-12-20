@@ -4,7 +4,6 @@
 @section('content')
 
 <div class="container">
-    <h2>THIS IS THE SECOND PAGE</h2>
 
     <div class="row">
 

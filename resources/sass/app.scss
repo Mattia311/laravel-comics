@@ -1,21 +1,240 @@
 //
 @use 'bootstrap';
 
-header {
-    background: black;
+#site_header {
+    background: white;
     color: white;
     margin-bottom: -8px;
-    height: 100px;
-    nav {
-        a {
-            text-decoration: none;
-            color: white;
-            padding-top: 20px;
+    height: 150px;
+    .top-header {
+        background: #0282F9;
+        height: 22px;
+        .text-top{
+            margin-left: 1000px;
 
+            p {
+                margin-right: 30px;
+                
+            }
+        }
+    }
+    .nav_menu {
+        margin-bottom: 5px;
+        margin-top: -24px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+            img {
+                width: 60%;
+            }
+            ul {
+                list-style: none;
+                height: 100%;
+                margin: 0;
+                li {
+                    display: inline-block;
+                    margin-left: 30px;
+                    height: 100%;
+                    a {
+                        display: inline-block;
+                        line-height: 120px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        font-size: 13px;
+                        color: #464646;
+                        &:hover {
+                            color: #0282F9;
+                            border-bottom: 5px solid #0282F9;
+                        }
+                        span {
+                            font-size: 15px;
+                            color: #0282F9;
+                        }
+                    }
+                }
+            }
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-bottom: 2px solid #0282F9;
+            width: 150px;
+            input {
+                border: 0;
+                text-align: end;
+                &::placeholder {
+                    color: #464646;
+                    font-weight: 700;
+                }
+                &:focus-visible {
+                    outline: -webkit-focus-ring-color auto 0px;
+                }
+            }
+            i {
+                color: black;
+            }
         }
     }
 }
+.hero_image {
+    background-image: url(../img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
 
-main {
-    background: cadetblue;
+#site_main {
+    background-color: #1C1C1C;
+    .container {
+        position: relative;
+        h2 {
+            font-size: 30px;
+            position: absolute;
+            top: -30px;
+            padding: 10px 20px;
+            background-color: #0282F9;
+            color: white;
+            text-transform: uppercase;
+        }
+        .series {
+            padding: 60px 10px 0;
+        }
+        .card_comics {
+            color: white;
+            text-transform: uppercase;
+            font-size: 11px;
+            img {
+                height: 180px;
+                width: 180px;
+                object-fit: cover;
+                object-position: top;
+            }
+            h3 {
+                font-size: 14px;
+                margin: 10px 0 20px;
+            }
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 15px;
+            button {
+                background-color: #0282F9;
+                border: 1px solid #0282F9;
+                color: white;
+                padding: 8px 45px;
+                text-transform: uppercase;
+                font-size: 11px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+    .menu_dc {
+        background-color: #0282F9;
+        color: white;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .icon {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                img {
+                    width: 100%;
+                    height: 60px;
+                }
+                h3 {
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-size: 15px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+#site_footer {
+    .link_footer {
+        background: url(../img/dc-logo-bg.png) 80% no-repeat, url(../img/footer-bg.jpg) no-repeat;
+        background-size: 610px, cover;
+        height: 470px;
+        display: flex;
+        .container {
+            .list_links {
+                display: flex;
+                .list {
+                    margin-right: 30px;
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                    }
+                    h3 {
+                        color: white;
+                        text-transform: uppercase;
+                        margin: 30px 0 15px;
+                    }
+                    a {
+                        color: #8f8f90;
+                        text-decoration: none;
+                    }
+                }
+            }
+            p {
+                color: #8f8f90;
+                a {
+                    color: #0282F9;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .logo_dc {
+            object-fit: cover;
+        }
+    }
+    .contact {
+        background-color: #303030;
+        height: 100px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            align-items: center;
+            .button button {
+                text-transform: uppercase;
+                font-size: 1rem;
+                padding: 12px;
+                color: white;
+                background-color: #303030;
+                border: 2px solid #0282F9;
+                cursor: pointer;
+            }
+            .socials {
+                display: flex;
+                align-items: center;
+                .social {
+                    margin-left: 20px;
+                    img {
+                        cursor: pointer;
+                    }
+                }
+                h3 {
+                    color: #0282F9;
+                    text-transform: uppercase;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
 }

@@ -1,7 +1,34 @@
 <header id="site_header" class="text-center">
-    <h1>QUESTI SONO TUTTI I FUMETTI DELLA COMICS</h1>
-
-    <nav class="text-center">
-        <a href="{{route('description')}}">description</a>
-    </nav>
+    <div class="top-header">
+        <div class="text-top d-flex">
+            <p>DC POWER VISA</p>
+            <p> ADDITIONAL DC SITES</p>
+        </div>
+        <nav class="nav_menu">
+            <div class="container">
+                <div class="logo">
+                    <img src="{{ asset('img/dc-logo.png') }}" alt="Logo DC">
+                </div>
+                <ul>
+                    <li><a href="#">Characters</a></li>
+                    <li><a href="{{route('description')}}">Comics</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Tv</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Collectibles</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Fans</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Shop <span>&dtrif;</span></a></li>
+                </ul>
+                <div class="search">
+                    <input type="search" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
+<div class="hero_image">
+    
+</div>
